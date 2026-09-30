@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Acarya</title>
+  <meta name="description" content="About Acarya: a short personal introduction, education, interests, and skills.">
+  <link rel="icon" type="image/svg+xml" href="/quiz1/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/quiz1/dist/output.css">
+  <script src="/quiz1/js/script.js" defer></script>
+</head>
+<body>
+  <header class="sticky top-0 z-10 border-b border-beige bg-cream">
+    <nav class="container-page flex h-16 items-center justify-between" aria-label="Main navigation">
+      <a href="/quiz1/" class="text-sm font-bold uppercase tracking-[0.3em] text-forest">Acarya</a>
+      <ul class="hidden items-center gap-8 md:flex">
+        <li><a class="nav-link" href="/quiz1/">Home</a></li>
+        <li><a class="nav-link" href="/quiz1/profile/" aria-current="page">Profile</a></li>
+        <li><a class="nav-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="nav-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="nav-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+      <button id="menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-forest hover:bg-beige md:hidden" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-beige md:hidden">
+      <ul class="container-page flex flex-col gap-1 py-3">
+        <li><a class="mobile-link" href="/quiz1/">Home</a></li>
+        <li><a class="mobile-link" href="/quiz1/profile/" aria-current="page">Profile</a></li>
+        <li><a class="mobile-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="mobile-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="mobile-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-page py-10 sm:py-14">
+      <p class="section-label">Profile</p>
+      <h1 class="mt-2 font-serif text-3xl text-forest sm:text-4xl">About Me</h1>
+
+      <div class="mt-8 grid gap-10 lg:grid-cols-[340px_1fr] lg:gap-14">
+        <div class="card h-fit">
+          <img src="/quiz1/assets/images/foto-acarya.jpg" alt="Foto profil Acarya" class="aspect-[4/5] w-full object-cover">
+          <div class="p-5">
+            <p class="font-serif text-xl text-charcoal">I Dewa Nyoman Acarya Wibawantra</p>
+            <p class="mt-1 text-sm text-stone-500">Informatics Student &middot; ITS Surabaya</p>
+          </div>
+        </div>
+
+        <div class="space-y-10">
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Hello there</h2>
+            <p class="mt-3 leading-relaxed text-stone-600">
+              Hi, I'm Acarya. I'm an Informatics Engineering student at ITS in Surabaya, and this website is
+              my project for the Web Programming course (EF234301). I grew up in Denpasar, Bali, and the
+              other pages of this site are a small tour of the city I call home.
+            </p>
+            <p class="mt-3 leading-relaxed text-stone-600">
+              Most of my time goes into coding. I build web applications with TypeScript, React, and Next.js,
+              and I write about what I learn on my personal site.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Education</h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Informatics Engineering student at Institut Teknologi Sepuluh Nopember (ITS), Surabaya.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Interests</h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              Building things for the web, UI/UX implementation, and performance optimization.
+              Away from the keyboard, I spend my time at the gym and with my cat.
+              Lately I've also been exploring machine learning, cloud architecture, and mobile development.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Skills</h2>
+            <div class="mt-3 space-y-2 text-sm leading-relaxed text-stone-600">
+              <p><span class="font-semibold text-charcoal">Languages:</span> HTML, CSS, JavaScript, TypeScript, and Go.</p>
+              <p><span class="font-semibold text-charcoal">Frontend:</span> React, Next.js, and Tailwind CSS.</p>
+              <p><span class="font-semibold text-charcoal">Backend:</span> Node.js, Express, and REST API development.</p>
+              <p><span class="font-semibold text-charcoal">Currently learning:</span> machine learning, cloud architecture, and DevOps.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Projects I'm proud of</h2>
+            <div class="mt-3 space-y-3 text-sm leading-relaxed text-stone-600">
+              <p>
+                <span class="font-semibold text-charcoal">PasienGigi.id</span> is a platform that connects dental
+                students who need practice patients with people looking for affordable dental care.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Find me online</h2>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a class="font-medium text-terracotta underline underline-offset-4 hover:text-forest" href="https://acaryawibawantra.xyz" target="_blank" rel="noopener">acaryawibawantra.xyz</a>, my personal website</li>
+              <li><a class="font-medium text-terracotta underline underline-offset-4 hover:text-forest" href="https://github.com/acaryawibawantra" target="_blank" rel="noopener">GitHub</a>, github.com/acaryawibawantra</li>
+              <li><a class="font-medium text-terracotta underline underline-offset-4 hover:text-forest" href="https://www.linkedin.com/in/i-dewa-nyoman-acarya-wibawantra-708159315/" target="_blank" rel="noopener">LinkedIn</a>, I Dewa Nyoman Acarya Wibawantra</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-pine text-frost">
+    <div class="container-page grid gap-8 py-10 sm:grid-cols-2 sm:items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.3em]">Acarya</p>
+        <p class="mt-2 text-sm text-frost/80">A Personal Website from Denpasar, Bali</p>
+      </div>
+      <nav aria-label="Footer" class="sm:justify-self-end">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a href="/quiz1/" class="text-frost/80 transition-colors hover:text-frost">Home</a></li>
+          <li><a href="/quiz1/profile/" class="text-frost/80 transition-colors hover:text-frost">Profile</a></li>
+          <li><a href="/quiz1/hometown/" class="text-frost/80 transition-colors hover:text-frost">Hometown</a></li>
+          <li><a href="/quiz1/food/" class="text-frost/80 transition-colors hover:text-frost">Food</a></li>
+          <li><a href="/quiz1/tourist/" class="text-frost/80 transition-colors hover:text-frost">Tourist</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-frost/15">
+      <p class="container-page py-4 text-xs text-frost/70">Acarya | 5025251222</p>
+    </div>
+  </footer>
+</body>
+</html>

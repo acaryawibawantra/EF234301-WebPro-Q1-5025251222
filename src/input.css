@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../profile";
+@source "../hometown";
+@source "../food";
+@source "../tourist";
+
+:root {
+  --c-page: #ffffff;
+  --c-surface: #eef5f0;
+  --c-line: #dce8e0;
+  --c-card: #ffffff;
+  --c-green: #1a5c40;
+  --c-pine: #1a5c40;
+  --c-pine-strong: #124733;
+  --c-accent: #0e7a52;
+  --c-heading: #1c2b24;
+  --c-body: #43504a;
+  --c-body-2: #4f5d55;
+  --c-muted: #6b7a71;
+  --c-frost: #f7fbf9;
+}
+
+@theme inline {
+  --color-cream: var(--c-page);
+  --color-beige: var(--c-surface);
+  --color-line: var(--c-line);
+  --color-white: var(--c-card);
+  --color-forest: var(--c-green);
+  --color-pine: var(--c-pine);
+  --color-pine-dark: var(--c-pine-strong);
+  --color-terracotta: var(--c-accent);
+  --color-charcoal: var(--c-heading);
+  --color-frost: var(--c-frost);
+  --color-stone-700: var(--c-body);
+  --color-stone-600: var(--c-body-2);
+  --color-stone-500: var(--c-muted);
+}
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply flex min-h-screen flex-col bg-cream font-sans text-stone-700 antialiased;
+  }
+
+  main {
+    @apply flex-1;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-terracotta;
+  }
+
+  .btn-primary {
+    @apply inline-block rounded-md bg-pine px-6 py-3 text-sm font-semibold text-frost transition-colors hover:bg-pine-dark;
+  }
+
+  .card {
+    @apply overflow-hidden rounded-xl border border-line bg-white;
+  }
+
+  .nav-link {
+    @apply border-b-2 border-transparent pb-0.5 text-sm font-medium text-stone-600 transition-colors hover:text-forest;
+  }
+
+  .nav-link[aria-current="page"] {
+    @apply border-terracotta text-forest;
+  }
+
+  .mobile-link {
+    @apply block rounded-md px-3 py-2 text-sm font-medium text-stone-700 transition-colors hover:bg-beige hover:text-forest;
+  }
+
+  .mobile-link[aria-current="page"] {
+    @apply bg-beige text-forest;
+  }
+}

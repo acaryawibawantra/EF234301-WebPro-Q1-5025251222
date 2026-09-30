@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hometown | Acarya</title>
+  <meta name="description" content="About Denpasar, Bali: the city where I grew up, its culture, everyday life, and a few interesting facts.">
+  <link rel="icon" type="image/svg+xml" href="/quiz1/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/quiz1/dist/output.css">
+  <script src="/quiz1/js/script.js" defer></script>
+</head>
+<body>
+  <header class="sticky top-0 z-10 border-b border-beige bg-cream">
+    <nav class="container-page flex h-16 items-center justify-between" aria-label="Main navigation">
+      <a href="/quiz1/" class="text-sm font-bold uppercase tracking-[0.3em] text-forest">Acarya</a>
+      <ul class="hidden items-center gap-8 md:flex">
+        <li><a class="nav-link" href="/quiz1/">Home</a></li>
+        <li><a class="nav-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="nav-link" href="/quiz1/hometown/" aria-current="page">Hometown</a></li>
+        <li><a class="nav-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="nav-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+      <button id="menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-forest hover:bg-beige md:hidden" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-beige md:hidden">
+      <ul class="container-page flex flex-col gap-1 py-3">
+        <li><a class="mobile-link" href="/quiz1/">Home</a></li>
+        <li><a class="mobile-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="mobile-link" href="/quiz1/hometown/" aria-current="page">Hometown</a></li>
+        <li><a class="mobile-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="mobile-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-page py-10 sm:py-14">
+      <p class="section-label">Hometown</p>
+      <h1 class="mt-2 font-serif text-3xl text-forest sm:text-4xl">Denpasar, Bali</h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-stone-600 sm:text-lg">
+        Denpasar is the capital of Bali and the city where I grew up. It is the island's busiest city,
+        but temples, traditional markets, and rice-field edges still sit right next to offices, schools, and malls.
+      </p>
+      <figure class="mt-8 overflow-hidden rounded-xl border border-line">
+        <img src="/quiz1/assets/images/denpasar-city.png" alt="A street in Denpasar with Balinese architecture, motorbikes, and local shops" class="aspect-[16/9] w-full object-cover">
+      </figure>
+
+      <div class="mt-10 grid gap-10 lg:grid-cols-[1fr_320px] lg:gap-14">
+        <div class="space-y-10">
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Culture</h2>
+            <p class="mt-3 leading-relaxed text-stone-600">
+              Most people in Denpasar follow Balinese Hinduism, and it shows in everyday life. Small woven offerings
+              (canang sari) are placed on sidewalks and shop fronts each morning, and the sound of gamelan from a
+              temple ceremony is a normal part of the week. Big celebrations like Galungan decorate the streets with
+              penjor, tall bamboo poles lined along the roads. Family temples, community groups called banjar, and
+              traditional ceremonies are still woven into city life.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="font-serif text-xl text-charcoal">Everyday life</h2>
+            <p class="mt-3 leading-relaxed text-stone-600">
+              A day in Denpasar starts early. Traders set up at Pasar Badung, the island's biggest traditional market,
+              long before office hours. During the day the streets fill with motorbikes, and people eat at simple
+              family food stalls called warungs. The weather is warm all year, so life happens outside: in the late
+              afternoon people jog or relax around Puputan Square in Renon, and on weekends many families head to
+              Sanur beach to watch the sunrise or swim in calm water.
+            </p>
+          </section>
+        </div>
+
+        <aside>
+          <div class="card p-6">
+            <h2 class="font-serif text-lg text-charcoal">Interesting facts</h2>
+            <ul class="mt-4 space-y-4">
+              <li class="text-sm leading-relaxed text-stone-600">
+                <span class="font-semibold text-charcoal">The name:</span> "Denpasar" comes from <em>den pasar</em>, which means "north of the market".
+              </li>
+              <li class="text-sm leading-relaxed text-stone-600">
+                <span class="font-semibold text-charcoal">Capital city:</span> it has been the capital of Bali since 1958, when Bali became a province.
+              </li>
+              <li class="text-sm leading-relaxed text-stone-600">
+                <span class="font-semibold text-charcoal">Population:</span> more than 700,000 residents, making it the most populous city on the island.
+              </li>
+              <li class="text-sm leading-relaxed text-stone-600">
+                <span class="font-semibold text-charcoal">Sanur:</span> one of Bali's best-known beaches is part of the city, on its east coast.
+              </li>
+              <li class="text-sm leading-relaxed text-stone-600">
+                <span class="font-semibold text-charcoal">Landmarks:</span> the Bajra Sandhi Monument, Bali Museum, and Jagatnatha Temple are all in Denpasar.
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-pine text-frost">
+    <div class="container-page grid gap-8 py-10 sm:grid-cols-2 sm:items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.3em]">Acarya</p>
+        <p class="mt-2 text-sm text-frost/80">A Personal Website from Denpasar, Bali</p>
+      </div>
+      <nav aria-label="Footer" class="sm:justify-self-end">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a href="/quiz1/" class="text-frost/80 transition-colors hover:text-frost">Home</a></li>
+          <li><a href="/quiz1/profile/" class="text-frost/80 transition-colors hover:text-frost">Profile</a></li>
+          <li><a href="/quiz1/hometown/" class="text-frost/80 transition-colors hover:text-frost">Hometown</a></li>
+          <li><a href="/quiz1/food/" class="text-frost/80 transition-colors hover:text-frost">Food</a></li>
+          <li><a href="/quiz1/tourist/" class="text-frost/80 transition-colors hover:text-frost">Tourist</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-frost/15">
+      <p class="container-page py-4 text-xs text-frost/70">Acarya | 5025251222</p>
+    </div>
+  </footer>
+</body>
+</html>

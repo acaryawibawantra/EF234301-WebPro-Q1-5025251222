@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Places | Acarya</title>
+  <meta name="description" content="Places worth visiting in Denpasar, Bali: Sanur beach, Bajra Sandhi Monument, Puputan Badung Square, Bali Museum, and Jagatnatha Temple.">
+  <link rel="icon" type="image/svg+xml" href="/quiz1/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/quiz1/dist/output.css">
+  <script src="/quiz1/js/script.js" defer></script>
+</head>
+<body>
+  <header class="sticky top-0 z-10 border-b border-beige bg-cream">
+    <nav class="container-page flex h-16 items-center justify-between" aria-label="Main navigation">
+      <a href="/quiz1/" class="text-sm font-bold uppercase tracking-[0.3em] text-forest">Acarya</a>
+      <ul class="hidden items-center gap-8 md:flex">
+        <li><a class="nav-link" href="/quiz1/">Home</a></li>
+        <li><a class="nav-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="nav-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="nav-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="nav-link" href="/quiz1/tourist/" aria-current="page">Tourist</a></li>
+      </ul>
+      <button id="menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-forest hover:bg-beige md:hidden" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-beige md:hidden">
+      <ul class="container-page flex flex-col gap-1 py-3">
+        <li><a class="mobile-link" href="/quiz1/">Home</a></li>
+        <li><a class="mobile-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="mobile-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="mobile-link" href="/quiz1/food/">Food</a></li>
+        <li><a class="mobile-link" href="/quiz1/tourist/" aria-current="page">Tourist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-page py-10 sm:py-14">
+      <p class="section-label">Tourist Places</p>
+      <h1 class="mt-2 font-serif text-3xl text-forest sm:text-4xl">Places worth visiting</h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-stone-600 sm:text-lg">
+        A simple guide to a few places in Denpasar that both visitors and locals keep coming back to.
+      </p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/sanur-beach.png" alt="Sanur beach at sunrise with wooden fishing boats on calm water" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Sanur Beach</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">Sanur, South Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              A calm beach on the east side of the city, known for its sunrise and long beachfront walking path.
+              In the morning you can see traditional <em>jukung</em> fishing boats on the water.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/bajra-sandhi.png" alt="Bajra Sandhi Monument in a green park in Renon" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Bajra Sandhi Monument</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">Renon, Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              A monument in the middle of Puputan Margarana park that remembers the Balinese struggle against
+              Dutch colonial rule. There is a museum inside, and the field around it is popular for jogging.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/puputan-square.png" alt="Puputan Badung Square, a large green field in the city center" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Puputan Badung Square</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">City Center, Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              A large open field in the heart of the city, next to what was once the palace of the Badung kingdom.
+              Today it is a public gathering place, busiest in the late afternoon.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/bali-museum.png" alt="Bali Museum with traditional Balinese courtyard architecture" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Bali Museum</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">City Center, Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Bali's main museum, just east of Puputan Square. Its buildings use traditional Balinese architecture,
+              and the collection covers the island's history, art, and culture.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/jagatnatha.png" alt="Jagatnatha Temple with an ornate stone gate and padmasana shrine" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Jagatnatha Temple</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">City Center, Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              A state temple near Puputan Square, dedicated to Sanghyang Widi. Its tall <em>padmasana</em> shrine
+              is one of the recognizable landmarks downtown.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/pasar-badung.png" alt="Pasar Badung, Bali's largest traditional market in central Denpasar" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Pasar Badung</h2>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-terracotta">City Center, Denpasar</p>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Bali's largest traditional market, on the bank of the Badung River. Traders set up long before
+              sunrise, selling fruit, vegetables, spices, and offerings. Come early to see it at its busiest.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-pine text-frost">
+    <div class="container-page grid gap-8 py-10 sm:grid-cols-2 sm:items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.3em]">Acarya</p>
+        <p class="mt-2 text-sm text-frost/80">A Personal Website from Denpasar, Bali</p>
+      </div>
+      <nav aria-label="Footer" class="sm:justify-self-end">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a href="/quiz1/" class="text-frost/80 transition-colors hover:text-frost">Home</a></li>
+          <li><a href="/quiz1/profile/" class="text-frost/80 transition-colors hover:text-frost">Profile</a></li>
+          <li><a href="/quiz1/hometown/" class="text-frost/80 transition-colors hover:text-frost">Hometown</a></li>
+          <li><a href="/quiz1/food/" class="text-frost/80 transition-colors hover:text-frost">Food</a></li>
+          <li><a href="/quiz1/tourist/" class="text-frost/80 transition-colors hover:text-frost">Tourist</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-frost/15">
+      <p class="container-page py-4 text-xs text-frost/70">Acarya | 5025251222</p>
+    </div>
+  </footer>
+</body>
+</html>

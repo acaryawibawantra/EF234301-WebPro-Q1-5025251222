@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Food | Acarya</title>
+  <meta name="description" content="Local food from Denpasar and Bali: babi guling, ayam betutu, lawar, sate lilit, and nasi campur.">
+  <link rel="icon" type="image/svg+xml" href="/quiz1/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/quiz1/dist/output.css">
+  <script src="/quiz1/js/script.js" defer></script>
+</head>
+<body>
+  <header class="sticky top-0 z-10 border-b border-beige bg-cream">
+    <nav class="container-page flex h-16 items-center justify-between" aria-label="Main navigation">
+      <a href="/quiz1/" class="text-sm font-bold uppercase tracking-[0.3em] text-forest">Acarya</a>
+      <ul class="hidden items-center gap-8 md:flex">
+        <li><a class="nav-link" href="/quiz1/">Home</a></li>
+        <li><a class="nav-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="nav-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="nav-link" href="/quiz1/food/" aria-current="page">Food</a></li>
+        <li><a class="nav-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+      <button id="menu-button" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-md text-forest hover:bg-beige md:hidden" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-beige md:hidden">
+      <ul class="container-page flex flex-col gap-1 py-3">
+        <li><a class="mobile-link" href="/quiz1/">Home</a></li>
+        <li><a class="mobile-link" href="/quiz1/profile/">Profile</a></li>
+        <li><a class="mobile-link" href="/quiz1/hometown/">Hometown</a></li>
+        <li><a class="mobile-link" href="/quiz1/food/" aria-current="page">Food</a></li>
+        <li><a class="mobile-link" href="/quiz1/tourist/">Tourist</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-page py-10 sm:py-14">
+      <p class="section-label">Local Food</p>
+      <h1 class="mt-2 font-serif text-3xl text-forest sm:text-4xl">Food from Bali</h1>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-stone-600 sm:text-lg">
+        These are some of the dishes you will find in warungs and food stalls around Denpasar.
+      </p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/babi-guling.png" alt="Babi guling served with rice, lawar, and sambal" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Babi Guling</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Roast pig rubbed with turmeric and Balinese spices, cooked slowly on a spit over fire.
+              It is one of the island's most famous dishes, usually served with rice, lawar, and sambal.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/ayam-betutu.png" alt="Ayam betutu, spiced roasted chicken on a banana leaf" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Ayam Betutu</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Chicken coated in a rich spice paste called <em>base genep</em>, wrapped in banana leaf,
+              and slow-cooked until tender. It is one of Bali's classic ceremonial dishes.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/lawar.png" alt="Lawar, a mix of minced meat, grated coconut, and vegetables" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Lawar</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              A side dish of grated coconut, long beans, minced meat, and a generous amount of spices
+              mixed together. It often accompanies babi guling and celebration meals.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/sate-lilit.png" alt="Sate lilit, minced meat satay wrapped around lemongrass stalks" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Sate Lilit</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Minced chicken, fish, or pork mixed with spices, then wrapped around a lemongrass stalk
+              or bamboo stick and grilled over charcoal.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/nasi-campur.png" alt="Nasi campur Bali, rice with small portions of side dishes" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Nasi Campur Bali</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Nasi campur means "mixed rice": a plate of rice with small portions of whatever the kitchen
+              offers that day, like shredded chicken, sate lilit, lawar, vegetables, and sambal.
+            </p>
+          </div>
+        </article>
+
+        <article class="card flex flex-col">
+          <img src="/quiz1/assets/images/tipat-cantok.png" alt="Tipat cantok, rice cakes with vegetables and peanut sauce" class="aspect-[4/3] w-full object-cover" loading="lazy">
+          <div class="flex flex-1 flex-col p-5">
+            <h2 class="font-serif text-lg text-charcoal">Tipat Cantok</h2>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              Compressed rice cake (<em>tipat</em>) cut into pieces, mixed with boiled long beans, bean sprouts,
+              and vegetables, then topped with spicy peanut sauce. A common warung snack across Bali.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-pine text-frost">
+    <div class="container-page grid gap-8 py-10 sm:grid-cols-2 sm:items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.3em]">Acarya</p>
+        <p class="mt-2 text-sm text-frost/80">A Personal Website from Denpasar, Bali</p>
+      </div>
+      <nav aria-label="Footer" class="sm:justify-self-end">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a href="/quiz1/" class="text-frost/80 transition-colors hover:text-frost">Home</a></li>
+          <li><a href="/quiz1/profile/" class="text-frost/80 transition-colors hover:text-frost">Profile</a></li>
+          <li><a href="/quiz1/hometown/" class="text-frost/80 transition-colors hover:text-frost">Hometown</a></li>
+          <li><a href="/quiz1/food/" class="text-frost/80 transition-colors hover:text-frost">Food</a></li>
+          <li><a href="/quiz1/tourist/" class="text-frost/80 transition-colors hover:text-frost">Tourist</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="border-t border-frost/15">
+      <p class="container-page py-4 text-xs text-frost/70">Acarya | 5025251222</p>
+    </div>
+  </footer>
+</body>
+</html>
