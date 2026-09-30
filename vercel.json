@@ -1,7 +1,6 @@
 {
-  "outputDirectory": ".",
-  "rewrites": [
-    { "source": "/quiz1", "destination": "/" },
-    { "source": "/quiz1/:path*", "destination": "/:path*" }
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/", "destination": "/quiz1/", "permanent": false }
   ]
 }
