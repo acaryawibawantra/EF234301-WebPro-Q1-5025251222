@@ -1,4 +1,4 @@
-# Quiz 1 — Personal Website
+# Quiz 1 Personal Website
 
 A simple static personal website for **EF234301 Web Programming — Quiz 1**.
 It introduces the student, their hometown **Denpasar, Bali**, local food, and tourist places.
