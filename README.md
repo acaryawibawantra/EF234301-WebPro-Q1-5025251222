@@ -2,8 +2,8 @@
 
 | **Name** | I Dewa Nyoman Acarya Wibawantra |
 |---|---|
-| **ID** | 5025251222 |
-| **Task** | Quiz 1 — Personal Website |
+| **NRP** | 5025251222 |
+| **Task** | Quiz 1 Personal Website |
 
 A simple static personal website built with **HTML**, **Tailwind CSS**, and a small amount of **vanilla JavaScript**. It introduces me, my hometown **Denpasar, Bali**, local food, and tourist places.
 
